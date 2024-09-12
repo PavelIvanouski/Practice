@@ -1,4 +1,4 @@
-package practice1;
+package by.it_academy.practice.practice1;
 
 public class Practice1 {
     public static void main(String[] args) {
