@@ -26,6 +26,7 @@ public class ExampleGoodCode {
         String thirdDigitStr = numberString.substring(2,3);
         int thirdDigit = Integer.parseInt(thirdDigitStr);
         return thirdDigit;
+
     }
 
 
