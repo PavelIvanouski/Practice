@@ -25,8 +25,15 @@ public class Fraction {
 
     public Fraction multiplyFraction(double number) {
         double resultNumerator;
-        resultNumerator = number * this.numerator;
-        Fraction resultFraction = new Fraction((int) resultNumerator, this.denominator);
+        double add = getAdditionalValue(number);
+        resultNumerator = number * this.numerator * add;
+        Fraction resultFraction = new Fraction((int) resultNumerator, (int) (this.denominator * add));
         return resultFraction;
+    }
+
+    private static double getAdditionalValue(double number) {
+        String resultNumeratorStr = String.valueOf(number);
+        int digitsCount = resultNumeratorStr.length() - 1 - resultNumeratorStr.indexOf('.');
+        return Math.pow(10, digitsCount);
     }
 }

@@ -11,5 +11,7 @@ public class CarOOP {
         car.drive();
         car.stopEngine();
 
+        Car.testStatic();
+
     }
 }
