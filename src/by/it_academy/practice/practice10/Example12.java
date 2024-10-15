@@ -19,17 +19,17 @@ public class Example12 {
 //        System.out.println("Мы ищем букву 'o' в строке "+hello+" начиная с индекса 2. Индекс "+index2 );
 //        System.out.println("Мы ищем букву 'W' в строке "+hello+" начиная с индекса 2. Индекс "+index3 );
 
-        String gm = "Good morning";
-        int index1 = gm.indexOf("morni");
-        int index2 = gm.indexOf("Vertex");
-        int index3 = gm.indexOf("Good morning", -2);
-        int index4 = gm.indexOf("Good morning", 2);
-        int index5 = gm.indexOf("Good morning", 999);
-        System.out.println("Мы ищем 'morni' в строке "+gm+". Индекс "+index1 );
-        System.out.println("Мы ищем 'Vertex' в строке "+gm+". Индекс "+index2 );
-        System.out.println("Мы ищем 'Good morning' в строке "+gm+" начиная с индекса -2. Результат: "+index3 );
-        System.out.println("Мы ищем 'Good morning' в строке "+gm+" начиная с индекса 2. Результат: "+index4 );
-        System.out.println("Мы ищем 'Good morning' в строке "+gm+" начиная с индекса 888. Результат: "+index5 );
+//        String gm = "Good morning";
+//        int index1 = gm.indexOf("morni");
+//        int index2 = gm.indexOf("Vertex");
+//        int index3 = gm.indexOf("Good morning", -2);
+//        int index4 = gm.indexOf("Good morning", 2);
+//        int index5 = gm.indexOf("Good morning", 999);
+//        System.out.println("Мы ищем 'morni' в строке "+gm+". Индекс "+index1 );
+//        System.out.println("Мы ищем 'Vertex' в строке "+gm+". Индекс "+index2 );
+//        System.out.println("Мы ищем 'Good morning' в строке "+gm+" начиная с индекса -2. Результат: "+index3 );
+//        System.out.println("Мы ищем 'Good morning' в строке "+gm+" начиная с индекса 2. Результат: "+index4 );
+//        System.out.println("Мы ищем 'Good morning' в строке "+gm+" начиная с индекса 888. Результат: "+index5 );
 
 //        String s = "Good news everyone!";
 //        int index = s.lastIndexOf("ne");
@@ -38,6 +38,12 @@ public class Example12 {
 //        String s = "Good news everyone!";
 //        int index = s.lastIndexOf("ne", 15);
 //        System.out.println(index); //5
+
+//        String str = "I love Java";
+//        String[] words = str.split(" ");
+//        for (String word : words) {
+//            System.out.println(word);
+//        }
 
     }
 }

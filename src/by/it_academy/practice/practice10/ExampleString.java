@@ -1,10 +1,83 @@
 package by.it_academy.practice.practice10;
 
+
+import java.util.Formatter;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import static java.lang.StringTemplate.STR;
+
 public class ExampleString {
     public static void main(String[] args) {
-//        String greeting = "Hello Students";
-//
-//        String str = " How are you?";
+
+
+        String Str = new String("Добро пожаловать в It-academy!");
+        System.out.print("Возвращаемое значение: " );
+        System.out.println(Str.matches("(.*)It-academy(.*)"));
+        System.out.print("Возвращаемое значение: " );
+        System.out.println(Str.matches("It-academy"));
+        System.out.print("Возвращаемое значение: " );
+        System.out.println(Str.matches("Добро пожаловать(.*)"));
+
+//        String Str = new String("Добро пожаловать в It-academy!");
+//        System.out.print("Возвращаемое значение: ");
+//        System.out.println(Str.replaceAll("(.*)It-academ(.*)",
+//                "IAMGROOT"));
+//        System.out.print("Возвращаемое значение: ");
+//        System.out.println(Str.replaceAll("It-academy",
+//                "Беларусь"));
+
+//        String Str1 = new String("Добро пожаловать в It-academy!");
+//        System.out.print("Возвращаемое значение: ");
+//        System.out.println(Str1.replaceFirst("(.*)It-academy(.*)",
+//                "IAMGROOT" ));
+//        System.out.print("Возвращаемое значение: ");
+//        System.out.println(Str1.replaceFirst("It-academy", "IAMGROOT"));
+//        String Str2 = new String("Добро пожаловать It-academy! Добро пожаловать It-academy!");
+//        System.out.print("Возвращаемое значение: " );
+//        System.out.println(Str2.replaceFirst("Добро пожаловать It-academy!", "IAMGROOT!"));
+
+//        String Str = new String("Добро-пожаловать-в-It-academy");
+//        System.out.println("Возвращаемое значение: ");
+//        for (String retval : Str.split("-", 2)) {
+//            System.out.println(retval);
+//        }
+//        System.out.println();
+//        System.out.println("Возвращаемое значение: ");
+//        for (String retval : Str.split("-", 3)) {
+//            System.out.println(retval);
+//        }
+//        System.out.println();
+//        System.out.println("Возвращаемое значение: ");
+//        for (String retval : Str.split("-", 0)) {
+//            System.out.println(retval);
+//        }
+//        System.out.println();
+//        System.out.println("Возвращаемое значение: ");
+//        for (String retval : Str.split("-")) {
+//            System.out.println(retval);
+//        }
+
+
+
+
+
+
+//        final String STR_CONST = "Hello, my name is %s.";
+
+
+//        // Hello, my name is Pavel
+//        String gretting1 = String.format(STR_CONST, name);
+//        System.out.println(gretting1);
+//        String gretting2 = String.format(STR_CONST, "name");
+//        System.out.println(gretting2);
+
+
+
+
+
+
+
 //        greeting = greeting + str;
 //
 //        System.out.println(greeting.length());
@@ -73,14 +146,14 @@ public class ExampleString {
 
 
 
-        String s1 = "Cat";
-        String s2 = "Cat";
-        String s3 = new String("Cat");
-        String s4 = s3.intern();
-
-        System.out.println("s1 == s2 :" + (s1 == s2)); // true
-        System.out.println("s1 == s3 :" + (s1 == s3)); // false
-        System.out.println("s1 == s3 :" + (s1 == s4)); // true
+//        String s1 = "Cat";
+//        String s2 = "Cat";
+//        String s3 = new String("Cat");
+//        String s4 = s3.intern();
+//
+//        System.out.println("s1 == s2 :" + (s1 == s2)); // true
+//        System.out.println("s1 == s3 :" + (s1 == s3)); // false
+//        System.out.println("s1 == s3 :" + (s1 == s4)); // true
 
     }
 
