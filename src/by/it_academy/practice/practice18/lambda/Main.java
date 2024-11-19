@@ -2,7 +2,11 @@ package by.it_academy.practice.practice18.lambda;
 
 public class Main {
     public static void main(String[] args) {
-        MathOperation addition = (a, b) -> a + b;
+        MathOperation addition = (a, b) -> {
+            System.out.println("Hello!");
+            int c = a + b;
+            return c;
+        };
         MathOperation subtraction = (a, b) -> a - b;
         MathOperation multiplication = (a, b) -> a * b;
 
