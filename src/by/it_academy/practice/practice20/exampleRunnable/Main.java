@@ -5,19 +5,15 @@ public class Main {
        CustomThread helloRunnable = new CustomThread();
        Thread thread = new Thread(helloRunnable);
 
-//       Thread threadLambda = new Thread(() -> System.out.println("Hello World"));
-//       threadLambda.start();
+       Thread threadLambda = new Thread(() -> {
+           System.out.println("Hello World");
+           // some logic
+
+       });
+       threadLambda.start();
 
 
-       thread.start();
-
-
-       try {
-           Thread.sleep(100);
-       } catch (InterruptedException e) {
-           throw new RuntimeException();
-       }
-       System.out.println("Hello from main thread!");
+       
    }
 
 }
