@@ -9,6 +9,7 @@ public class Main {
         // Определение интерфейсов, реализуемых классом
         Class linkedListClass = LinkedList.class;
         Class[] interfaces = linkedListClass.getInterfaces();
+        linkedListClass.getInterfaces();
 
         System.out.println("Implemented by LinkedList interfaces;");
         for (Class cInterface : interfaces) {
